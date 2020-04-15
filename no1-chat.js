@@ -1,14 +1,14 @@
 const input = ["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"]
 
-//const expectedResult = ["Prodo came in.", "Ryan came in.", "Prodo has left.", "Prodo came in."]
+// expectedResult = ["Prodo came in.", "Ryan came in.", "Prodo has left.", "Prodo came in."]
 
 function solution(record) {
     let answer = []
     let history = []
     let user = {}
 
-    for (let i=0; i<record.length; i++) {
-        let splitRecord = record[i].split(' ')
+    record.map((r) => {
+        splitRecord = r.split(' ')
         let activity = splitRecord[0]
         let id = splitRecord[1]
         let name = splitRecord[2]
@@ -35,7 +35,7 @@ function solution(record) {
             default:
                 break
         }
-    }
+    })
 
     for (let h of history) {
         let id = h[0]
