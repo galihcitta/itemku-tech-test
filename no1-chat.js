@@ -1,6 +1,6 @@
 const input = ["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"]
 
-//const expectedResult = ["Prodo came in.", "Ryan came in.", "Prodo has left.", "Prodo came in."]
+const expectedResult = ["Prodo came in.", "Ryan came in.", "Prodo has left.", "Prodo came in."]
 
 function solution(record) {
     let answer = []
